@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
-body {
+.mainBody {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
     background-size: cover;
     -webkit-animation: slidein 100s;
@@ -136,88 +136,4 @@ body {
 h2 {
     margin-bottom: 10px;
     /* Adjust spacing between heading and text */
-}
-
-.bioBody {
-    box-sizing: border-box;
-    outline: none;
-    font-family: 'Poppins';
-    width: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.bioRow {
-    width: 80%;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    overflow-x: hidden;
-    padding: 5rem;
-}
-
-.bioRow .imgWrapper {
-    overflow: hidden;
-}
-
-.bioRow .imgWrapper .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-.bioRow .imgWrapper:hover .img {
-    transform: scale(1.25);
-}
-
-.bioRow .contentWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-}
-
-.biRow .contentWrapper span.textWrapper {
-    display: block;
-    font-size: 20px;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.biRow .contentWrapper span.textWrapper span {
-    display: inline-block;
-    background: #383f47;
-    width: 70px;
-    height: 5px;
-}
-
-.bioRow .contentWrapper h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #383f47;
-    padding-bottom: 20px;
-}
-
-.bioRow .contentWrapper p {
-    font-size: 16px;
-    line-height: 25px;
-    padding-bottom: 25px;
-}
-
-.bioRow .contentWrapper a {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #383f47;
-    color: #fff;
-    padding: 15px 40px;
-    letter-spacing: 1px;
-    user-select: none;
 }
